@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>ASL — Awe Stanley Plumbing Nigeria</title>
+<link rel="icon" type="" href="preview.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.hero{min-height:100svh;display:flex;align-items:flex-end;position:relative;overflow:hidden;padding-bottom:4rem;}
+.hero-bg{position:absolute;inset:0;background:repeating-linear-gradient(92deg,transparent 0,transparent 20px,rgba(90,50,10,.05) 20px,rgba(90,50,10,.05) 21px),repeating-linear-gradient(88deg,transparent 0,transparent 70px,rgba(60,30,5,.07) 70px,rgba(60,30,5,.07) 72px),linear-gradient(155deg,#2E1A0B 0%,#1A0E05 45%,#0D0703 100%);}
+.hero-slash{position:absolute;top:-10%;right:-5%;width:55%;height:130%;background:linear-gradient(135deg,rgba(201,148,42,.13) 0%,rgba(201,148,42,.03) 55%,transparent 100%);clip-path:polygon(20% 0%,100% 0%,80% 100%,0% 100%);}
+.hero-line{position:absolute;top:0;bottom:0;right:38%;width:1.5px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:.3;}
+.hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:8rem 2rem 2rem;width:100%;}
+.hero-eyebrow{font-family:var(--condense);font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:14px;}
+.hero-eyebrow::before{content:'';display:block;width:40px;height:1px;background:var(--gold);}
+.hero h1{font-family:var(--display);font-size:clamp(2.8rem,8vw,5.8rem);font-weight:900;line-height:1.0;color:var(--white);}
+.hero h1 em{font-style:normal;color:var(--gold);display:block;}
+.hero-sub{font-size:1.05rem;color:var(--cream-dim);line-height:1.75;max-width:500px;margin:1.8rem 0 2.5rem;}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;}
+.hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(201,148,42,.2);flex-wrap:wrap;}
+.stat-val{font-family:var(--display);font-size:2rem;font-weight:900;color:var(--gold);}
+.stat-lbl{font-size:.78rem;color:var(--gray);letter-spacing:.05em;margin-top:2px;}
+.scroll-ind{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2;}
+.scroll-ind span{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);animation:sdrop 1.8s ease-in-out infinite;}
+.scroll-ind p{font-family:var(--condense);font-size:.65rem;letter-spacing:.2em;color:var(--gray);text-transform:uppercase;}
+@keyframes sdrop{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+.intro{padding:6rem 2rem;background:var(--brown-mid);position:relative;overflow:hidden;}
+.intro::before{content:'ASL';position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-family:var(--display);font-size:22vw;font-weight:900;color:rgba(201,148,42,.03);pointer-events:none;line-height:1;}
+.intro-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.intro-img{position:relative;}
+.intro-img img{width:100%;aspect-ratio:4/5;object-fit:contain;object-position:center;padding:2rem;background:var(--brown-warm);}
+.intro-frame{position:absolute;top:-14px;left:-14px;right:14px;bottom:14px;border:2px solid rgba(201,148,42,.3);pointer-events:none;}
+.intro-badge{position:absolute;bottom:-1.2rem;right:-1.2rem;background:var(--gold);color:var(--brown-dark);padding:1rem 1.3rem;text-align:center;}
+.intro-badge strong{display:block;font-family:var(--display);font-size:2rem;font-weight:900;line-height:1;}
+.intro-badge span{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+.intro-text p{color:var(--cream-dim);line-height:1.85;font-size:.97rem;margin:1.5rem 0;}
+.intro-pills{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;}
+.pill{padding:1rem 1.2rem;border-left:2px solid var(--gold);background:rgba(201,148,42,.06);}
+.pill strong{display:block;color:var(--gold);font-size:.83rem;font-weight:700;margin-bottom:3px;}
+.pill span{color:var(--gray);font-size:.8rem;line-height:1.5;}
+.services-sec{padding:6rem 2rem;background:var(--brown-dark);}
+.sec-head{max-width:1200px;margin:0 auto 3.5rem;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem;}
+.svc-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5px;background:rgba(201,148,42,.1);}
+.svc-card{background:var(--brown-mid);padding:2.2rem 1.8rem;transition:background .3s;position:relative;overflow:hidden;}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s;}
+.svc-card:hover{background:var(--brown-warm);}
+.svc-card:hover::after{transform:scaleX(1);}
+.svc-icon{width:50px;height:50px;border-radius:var(--radius);background:rgba(201,148,42,.1);border:1px solid rgba(201,148,42,.25);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.3rem;}
+.svc-card h3{font-family:var(--condense);font-size:1.1rem;font-weight:700;letter-spacing:.04em;color:var(--white);margin-bottom:.6rem;}
+.svc-card p{color:var(--gray);font-size:.86rem;line-height:1.7;}
+.why-sec{padding:6rem 2rem;background:var(--brown-warm);}
+.why-inner{max-width:1200px;margin:0 auto;}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.8rem;margin-top:3.5rem;}
+.why-card{padding:1.8rem;border:1px solid rgba(201,148,42,.15);transition:border-color .3s,transform .3s;}
+.why-card:hover{border-color:var(--gold);transform:translateY(-4px);}
+.why-card .wicon{font-size:1.9rem;margin-bottom:1rem;}
+.why-card h4{font-family:var(--condense);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:.5rem;letter-spacing:.05em;}
+.why-card p{color:var(--gray);font-size:.83rem;line-height:1.65;}
+.process-sec{padding:6rem 2rem;background:var(--brown-mid);}
+.process-inner{max-width:1200px;margin:0 auto;}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem;position:relative;}
+.process-steps::before{content:'';position:absolute;top:27px;left:12.5%;right:12.5%;height:1px;background:rgba(201,148,42,.3);}
+.pstep{padding:0 1.5rem;text-align:center;}
+.pnum{width:54px;height:54px;border-radius:50%;background:var(--brown-dark);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 1.4rem;font-family:var(--display);font-size:1.2rem;font-weight:900;color:var(--gold);position:relative;z-index:1;}
+.pstep h3{font-family:var(--condense);font-weight:700;font-size:1rem;letter-spacing:.06em;color:var(--white);margin-bottom:.5rem;}
+.pstep p{color:var(--gray);font-size:.83rem;line-height:1.65;}
+@media(max-width:768px){
+  .hero h1{font-size:clamp(2.4rem,10vw,3.5rem);}
+  .hero-slash,.hero-line{display:none;}
+  .intro-grid{grid-template-columns:1fr;gap:3rem;}
+  .svc-grid{grid-template-columns:1fr;}
+  .sec-head{flex-direction:column;align-items:flex-start;}
+  .why-grid{grid-template-columns:1fr 1fr;}
+  .process-steps{grid-template-columns:1fr 1fr;gap:2rem;}
+  .process-steps::before{display:none;}
+  .pstep{padding:0;}
+}
+@media(max-width:480px){
+  .hero-stats{gap:1.5rem;}
+  .intro-pills{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .process-steps{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-slash"></div><div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Nigeria's Trusted Plumbing Specialists</div>
+    <h1>Pipes That Last.<br><em>Work You Can Trust.</em></h1>
+    <p class="hero-sub">From water treatment to bathroom design, borehole drilling to pipe fitting — ASL delivers expert plumbing solutions across Lagos and beyond.</p>
+    <div class="hero-ctas">
+      <a href="contact.html" class="btn-gold">🔧 Get a Free Quote</a>
+      <a href="services.html" class="btn-outline">View Services →</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-val">26+</div><div class="stat-lbl">Years Experience</div></div>
+      <div><div class="stat-val">500+</div><div class="stat-lbl">Projects Done</div></div>
+      <div><div class="stat-val">24/7</div><div class="stat-lbl">Emergency Service</div></div>
+    </div>
+  </div>
+  <div class="scroll-ind"><p>Scroll</p><span></span></div>
+</section>
+<div id="ticker-slot"></div>
+<section class="intro">
+  <div class="intro-grid">
+    <div class="intro-img reveal-left">
+      <div class="intro-frame"></div>
+      <img src="preview.webp" alt="ASL Awe Stanley Plumbing logo"/>
+      <div class="intro-badge"><strong>ASL</strong><span>Serving Nigeria</span></div>
+    </div>
+    <div class="reveal-right">
+      <span class="label">Who We Are</span>
+      <h2 class="section-title">Built on Integrity,<br><span>Backed by Expertise</span></h2>
+      <p>Awe Stanley Plumbing & Pipe and Fitting — Bathroom Design Plus Nigeria Limited has been the name Lagos trusts for precision plumbing, water systems, and complete bathroom solutions.</p>
+      <p>Every technician is trained, insured, and committed to one standard: getting it right the first time. We don't cut corners — we fix them.</p>
+      <div class="intro-pills">
+        <div class="pill"><strong>Licensed</strong><span>Certified technicians on every job</span></div>
+        <div class="pill"><strong>Insured</strong><span>Full liability coverage always</span></div>
+        <div class="pill"><strong>On-Time</strong><span>We respect your schedule</span></div>
+        <div class="pill"><strong>Guaranteed</strong><span>All work backed by warranty</span></div>
+      </div>
+      <br><a href="about.html" class="btn-gold" style="margin-top:1rem;">Learn About Us →</a>
+    </div>
+  </div>
+</section>
+<section class="services-sec">
+  <div class="sec-head">
+    <div class="reveal"><span class="label">What We Do</span><h2 class="section-title">Our <span>Services</span></h2></div>
+    <a href="services.html" class="btn-outline reveal">All Services →</a>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card reveal"><div class="svc-icon">🔩</div><h3>Pipe Installation & Fitting</h3><p>Supply and installation of all pipe systems — PVC, PPR, galvanized, and copper — for residential and commercial buildings.</p></div>
+    <div class="svc-card reveal"><div class="svc-icon">💧</div><h3>Water Treatment Systems</h3><p>Filtration, purification, and treatment plant installation ensuring your water meets health and safety standards.</p></div>
+    <div class="svc-card reveal"><div class="svc-icon">🚿</div><h3>Bathroom Design & Fitting</h3><p>Full bathroom design, supply, and installation — from concept to completion. Modern, functional, built to last.</p></div>
+    <div class="svc-card reveal"><div class="svc-icon">🏗️</div><h3>Borehole Drilling & Palling</h3><p>Professional borehole drilling, pump installation, and water casing — reliable water access for homes and estates.</p></div>
+    <div class="svc-card reveal"><div class="svc-icon">🛠️</div><h3>Leak Detection & Repair</h3><p>Advanced leak tracing and fast repair to protect your property before water damage becomes a crisis.</p></div>
+    <div class="svc-card reveal"><div class="svc-icon">⚡</div><h3>Emergency Plumbing</h3><p>24/7 rapid response for burst pipes, blocked drains, and plumbing failures. We're there when it matters most.</p></div>
+  </div>
+</section>
+<section class="why-sec">
+  <div class="why-inner">
+    <div style="text-align:center;" class="reveal"><span class="label">Why Choose ASL</span><h2 class="section-title">The ASL <span>Difference</span></h2></div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="wicon">🏆</div><h4>15+ Years Mastery</h4><p>Deep experience across residential, commercial, and industrial plumbing across Lagos State.</p></div>
+      <div class="why-card reveal"><div class="wicon">📋</div><h4>Transparent Pricing</h4><p>No surprise fees. Every quote is itemised and locked in before work begins.</p></div>
+      <div class="why-card reveal"><div class="wicon">🤝</div><h4>After-Service Care</h4><p>We follow up and stand behind our work with a solid warranty on all completed jobs.</p></div>
+      <div class="why-card reveal"><div class="wicon">⚡</div><h4>Fast & Reliable</h4><p>Emergency same-day service available. Plumbing problems don't wait — neither do we.</p></div>
+    </div>
+  </div>
+</section>
+<section class="process-sec">
+  <div class="process-inner">
+    <div style="text-align:center;" class="reveal"><span class="label">How It Works</span><h2 class="section-title">Simple. <span>Transparent.</span> Professional.</h2></div>
+    <div class="process-steps">
+      <div class="pstep reveal"><div class="pnum">1</div><h3>Get in Touch</h3><p>Call, WhatsApp, or fill our quote form. We respond within the hour.</p></div>
+      <div class="pstep reveal"><div class="pnum">2</div><h3>Site Assessment</h3><p>Our technician visits, assesses the job, and gives a clear honest quote — no hidden charges.</p></div>
+      <div class="pstep reveal"><div class="pnum">3</div><h3>We Get to Work</h3><p>Our crew arrives on time, fully equipped, and completes the job to the highest standard.</p></div>
+      <div class="pstep reveal"><div class="pnum">4</div><h3>Quality Sign-Off</h3><p>You inspect with us. Only when you're satisfied do we close the job.</p></div>
+    </div>
+  </div>
+</section>
+<div class="cta-band">
+  <h2>Need an Emergency Plumber Right Now?</h2>
+  <p>Available 24/7. One call and we're on our way.</p>
+  <div class="cta-band-btns">
+    <a href="tel:+2348024235909" class="btn-dark">📞 Call +234 802 423 5909</a>
+    <a href="https://wa.me/2348037110675" target="_blank" class="btn-dark">💬 WhatsApp Us</a>
+  </div>
+</div>
+<script src="shared.js"></script>
+<script>injectNav('Home');document.getElementById('ticker-slot').outerHTML=injectTicker();injectFooter();initNavScroll();initReveal();</script>
+</body></html>

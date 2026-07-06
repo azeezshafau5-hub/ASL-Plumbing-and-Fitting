@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Services — ASL Awe Stanley Plumbing Nigeria</title>
+<link rel="icon" type="" href="preview.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.services-main{padding:6rem 2rem;background:var(--brown-dark);}
+.services-inner{max-width:1200px;margin:0 auto;}
+.svc-feature{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding:4rem 0;border-bottom:1px solid rgba(201,148,42,.1);}
+.svc-feature:last-child{border-bottom:none;}
+.svc-feature.reverse{direction:rtl;}
+.svc-feature.reverse>*{direction:ltr;}
+.svc-feature-icon{font-size:5rem;text-align:center;padding:3rem;background:var(--brown-mid);display:flex;align-items:center;justify-content:center;border:1px solid rgba(201,148,42,.15);aspect-ratio:1/1;}
+.svc-feature-text h3{font-family:var(--display);font-size:clamp(1.5rem,3vw,2rem);color:var(--white);margin:.5rem 0 1rem;}
+.svc-feature-text p{color:var(--cream-dim);line-height:1.85;font-size:.97rem;margin-bottom:1.2rem;}
+.svc-bullets{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin:1.2rem 0 1.8rem;}
+.svc-bullets li{display:flex;align-items:flex-start;gap:10px;color:var(--cream-dim);font-size:.88rem;line-height:1.6;}
+.svc-bullets li::before{content:'◆';color:var(--gold);font-size:.6rem;margin-top:.35rem;flex-shrink:0;}
+.pricing-note{display:inline-flex;align-items:center;gap:8px;padding:.7rem 1.2rem;background:rgba(201,148,42,.08);border:1px solid rgba(201,148,42,.2);font-family:var(--condense);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:1rem;}
+.emergency-band{padding:5rem 2rem;background:var(--brown-warm);text-align:center;}
+.emergency-band h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.8rem);color:var(--white);}
+.emergency-band h2 span{color:var(--gold);}
+.emergency-band p{color:var(--cream-dim);margin:1rem 0 2rem;font-size:1rem;line-height:1.7;max-width:500px;margin-left:auto;margin-right:auto;}
+.emergency-btns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;}
+@media(max-width:768px){
+  .svc-feature{grid-template-columns:1fr;gap:2rem;}
+  .svc-feature.reverse{direction:ltr;}
+  .svc-feature-icon{aspect-ratio:unset;padding:2rem;font-size:3.5rem;}
+}
+</style>
+</head>
+<body>
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Services</span></div>
+  <h1>Our <span>Services</span></h1>
+  <p>From a dripping tap to a full commercial water system — ASL handles it all with precision and professionalism.</p>
+</div>
+<div id="ticker-slot"></div>
+<section class="services-main">
+  <div class="services-inner">
+
+    <div class="svc-feature reveal">
+      <div class="svc-feature-icon"><img src="images.jpg" alt=""></div>
+      <div class="svc-feature-text">
+        <span class="label">Service 01</span>
+        <h3>Pipe Installation & Fitting</h3>
+        <p>We supply and install all types of pipe systems for residential homes, commercial buildings, and industrial facilities. Every installation meets Nigerian building code and international plumbing standards.</p>
+        <ul class="svc-bullets">
+          <li>PVC, PPR, copper, and galvanized pipe systems</li>
+          <li>Supply and distribution line installation</li>
+          <li>Pipe relining and replacement for old buildings</li>
+          <li>Commercial and estate plumbing networks</li>
+        </ul>
+        <a href="contact.html" class="btn-gold">Get a Quote →</a>
+        <div class="pricing-note">✦ Free site assessment included</div>
+      </div>
+    </div>
+
+    <div class="svc-feature reverse reveal">
+      <div class="svc-feature-icon"><img src="images (1).jpg" alt=""></div>
+      <div class="svc-feature-text">
+        <span class="label">Service 02</span>
+        <h3>Water Treatment Systems</h3>
+        <p>Clean, safe water is a right — not a luxury. ASL designs, supplies, and installs complete water treatment solutions for homes, offices, estates, and industrial plants across Lagos.</p>
+        <ul class="svc-bullets">
+          <li>Filtration and purification system installation</li>
+          <li>Water softening and chemical dosing plants</li>
+          <li>UV and reverse osmosis (RO) systems</li>
+          <li>Treatment plant maintenance and servicing</li>
+        </ul>
+        <a href="contact.html" class="btn-gold">Get a Quote →</a>
+        <div class="pricing-note">✦ Free water quality assessment</div>
+      </div>
+    </div>
+
+    <div class="svc-feature reveal">
+      <div class="svc-feature-icon"><img src="images (2).jpg" alt=""></div>
+      <div class="svc-feature-text">
+        <span class="label">Service 03</span>
+        <h3>Bathroom Design & Fitting</h3>
+        <p>Your bathroom should work perfectly and look great. Our design and fitting team handles everything from layout planning to final fixture installation — delivering bathrooms that are modern, durable, and built to your specification.</p>
+        <ul class="svc-bullets">
+          <li>Full bathroom concept design and planning</li>
+          <li>Sanitary ware supply and installation</li>
+          <li>Shower, bathtub, and WC fitting</li>
+          <li>Tiling, waterproofing, and finishing works</li>
+        </ul>
+        <a href="contact.html" class="btn-gold">Get a Quote →</a>
+        <div class="pricing-note">✦ 3D design preview available</div>
+      </div>
+    </div>
+
+    <div class="svc-feature reverse reveal">
+      <div class="svc-feature-icon"><img src="images (3).jpg" alt=""></div>
+      <div class="svc-feature-text">
+        <span class="label">Service 04</span>
+        <h3>Borehole Drilling & Palling</h3>
+        <p>Reliable, independent water supply for your property. ASL provides end-to-end borehole solutions — from site survey and drilling to pump installation and water casing — giving you access to clean groundwater for years to come.</p>
+        <ul class="svc-bullets">
+          <li>Site survey and aquifer assessment</li>
+          <li>Professional borehole drilling (all depths)</li>
+          <li>Submersible pump supply and installation</li>
+          <li>Casing, grouting, and surface works</li>
+        </ul>
+        <a href="contact.html" class="btn-gold">Get a Quote →</a>
+        <div class="pricing-note">✦ Free geological survey</div>
+      </div>
+    </div>
+
+    <div class="svc-feature reveal">
+      <div class="svc-feature-icon"><img src="images (4).jpg" alt=""></div>
+      <div class="svc-feature-text">
+        <span class="label">Service 05</span>
+        <h3>Leak Detection & Repair</h3>
+        <p>Hidden leaks cost you money and damage your property. Our technicians use advanced detection methods to find leaks fast — without unnecessary destruction — and repair them cleanly and permanently.</p>
+        <ul class="svc-bullets">
+          <li>Non-invasive electronic leak detection</li>
+          <li>Burst pipe and joint repair</li>
+          <li>Underground and concealed pipe leaks</li>
+          <li>Post-repair pressure testing and certification</li>
+        </ul>
+        <a href="contact.html" class="btn-gold">Get a Quote →</a>
+        <div class="pricing-note">✦ Same-day response available</div>
+      </div>
+    </div>
+
+    <div class="svc-feature reverse reveal">
+      <div class="svc-feature-icon"> <img src="images (5).jpg" alt=""></div>
+      <div class="svc-feature-text">
+        <span class="label">Service 06</span>
+        <h3>Emergency Plumbing</h3>
+        <p>Plumbing emergencies don't follow business hours. ASL's emergency response team is available 24 hours a day, 7 days a week across Lagos — ready to contain, repair, and restore your water system fast.</p>
+        <ul class="svc-bullets">
+          <li>Burst pipe emergency containment and repair</li>
+          <li>Blocked drain and sewer clearing</li>
+          <li>Tap, valve, and stopcock failure repair</li>
+          <li>Flood damage assessment and remediation</li>
+        </ul>
+        <a href="tel:+2348024235909" class="btn-gold">📞 Call Now — 24/7</a>
+        <div class="pricing-note">✦ Emergency surcharge may apply</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="emergency-band">
+  <h2>Not Sure Which Service You Need?</h2>
+  <p>Call or WhatsApp us — we'll help you figure out exactly what your situation requires, with no pressure and no obligation.</p>
+  <div class="emergency-btns">
+    <a href="tel:+2348024235909" class="btn-gold">📞 +234 802 423 5909</a>
+    <a href="https://wa.me/2348037110675" target="_blank" class="btn-outline">💬 WhatsApp Us</a>
+  </div>
+</section>
+<div class="cta-band">
+  <h2>Ready to Get Started?</h2>
+  <p>Fill in our quick quote form and we'll get back to you within the hour.</p>
+  <div class="cta-band-btns">
+    <a href="contact.html" class="btn-dark">🔧 Request Free Quote</a>
+    <a href="https://wa.me/2348037110675" target="_blank" class="btn-dark">💬 WhatsApp Quote</a>
+  </div>
+</div>
+<script src="shared.js"></script>
+<script>injectNav('Services');document.getElementById('ticker-slot').outerHTML=injectTicker();injectFooter();initNavScroll();initReveal();</script>
+</body></html>
